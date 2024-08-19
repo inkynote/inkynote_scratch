@@ -4,7 +4,7 @@ body {
     font-family: 'Playwrite FR Moderne', cursive;
     color: white;
     background-color: #1a1a1a;
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     background-color: #000;
     text-align: center;
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,7 +47,7 @@ body {
 /* Modify the sidebar to be a top navigation bar */
 .sidebar {
     background-color: #111;
-    padding: 10px;
+    padding: 0;
     position: fixed;
     top: 80px; /* Below the header */
     left: 0;
