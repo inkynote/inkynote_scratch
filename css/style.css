@@ -19,14 +19,23 @@ body {
     z-index: 1000;
 }
 
+/* Import Dancing Script from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Apply Dancing Script font to "InkyNote" */
 .site-logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold; /* Use the bold weight of Dancing Script */
+    font-size: 2.5em; /* Adjust the font size as needed */
     margin: 0;
-    font-size: 2.5em;
 }
 
+/* Apply Dancing Script font to "A Writing Retreat" */
 .site-logo h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal; /* Use the normal weight of Dancing Script */
     margin: 5px 0 0 0;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjust the font size as needed */
     color: #ccc;
 }
 
