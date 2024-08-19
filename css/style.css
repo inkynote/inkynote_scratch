@@ -169,6 +169,6 @@ footer {
     }
 
     .content {
-        margin-top: 220px; /* Adjust margin to accommodate the height of the sidebar on mobile */
+        margin-top: 50px; /* Adjust margin to accommodate the height of the sidebar on mobile */
     }
 }
