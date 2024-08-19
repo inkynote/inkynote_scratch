@@ -116,6 +116,15 @@ body {
     border-radius: 10px;
 }
 
+/* separate content styles */
+.post-content img {
+    max-width: 100%; /* Contain the image within the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px; /* Center the image with margin below */
+}
+
+
 /* Ensure post titles are white and remain white after clicking */
 .sidebar nav ul li a,
 .featured-posts article a,
