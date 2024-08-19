@@ -12,7 +12,7 @@ body {
 .site-header {
     background-color: #000;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,7 +33,7 @@ body {
 /* Modify the sidebar to be a top navigation bar */
 .sidebar {
     background-color: #111;
-    padding: 10px;
+    padding: 0px;
     position: fixed;
     top: 80px; /* Below the header */
     left: 0;
