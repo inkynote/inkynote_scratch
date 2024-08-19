@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InkyNote: Writing Retreat</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
@@ -13,9 +12,12 @@
             <h1>InkyNote</h1>
             <h2>Writing Retreat</h2>
         </div>
+        <button class="menu-button" id="menuButton">
+            &#9776; Menu
+        </button>
     </header>
 
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,43 +29,13 @@
     </aside>
 
     <main class="content">
-        <section class="featured-posts" data-aos="fade-up">
-            <h2>Featured Posts</h2>
-            <div class="posts">
-                <article data-aos="fade-right">
-                    <img src="images/post1.jpg" alt="Post 1">
-                    <h3><a href="posts/post1.html">Post Title 1</a></h3>
-                    <p>Short description of the post.</p>
-                </article>
-                <article data-aos="fade-left">
-                    <img src="images/post2.jpg" alt="Post 2">
-                    <h3><a href="posts/post2.html">Post Title 2</a></h3>
-                    <p>Short description of the post.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="more-posts">
-            <h2>More Posts</h2>
-            <div class="posts-list">
-                <!-- Add more posts with similar article structure -->
-                <article>
-                    <img src="images/post3.jpg" alt="Post 3">
-                    <h3><a href="posts/post3.html">Post Title 3</a></h3>
-                    <p>Short description of the post.</p>
-                </article>
-                <!-- Add more articles as needed -->
-            </div>
-        </section>
+        <!-- Your content here -->
     </main>
 
     <footer>
         <p>© 2024 InkyNote. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
