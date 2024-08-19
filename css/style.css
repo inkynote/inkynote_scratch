@@ -4,73 +4,97 @@ body {
     background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #000;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.site-header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-logo h1 {
     margin: 0;
+    font-size: 2.5em;
+}
+
+.site-logo h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.sidebar {
+    background-color: #111;
+    padding: 20px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 100px);
+}
+
+.sidebar nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.sidebar nav ul li {
+    margin-bottom: 20px;
 }
 
-nav ul li a {
+.sidebar nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    display: block;
 }
 
-.landing {
-    position: relative;
-    height: 100vh;
-    background-image: url('../images/landing-image.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.content {
+    margin-left: 220px;
+    padding: 120px 20px 20px 20px;
+    flex: 1;
+    overflow-y: auto;
 }
 
-.landing-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.featured-posts,
+.more-posts {
+    margin-bottom: 50px;
 }
 
-.featured-posts {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.featured-posts .posts {
+.featured-posts .posts,
+.more-posts .posts-list {
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-.featured-posts article {
+.featured-posts article,
+.more-posts .posts-list article {
     background-color: #333;
     padding: 20px;
-    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(50% - 10px); /* Adjust based on number of posts in row */
 }
 
-.featured-posts img {
+.featured-posts img,
+.more-posts img {
     width: 100%;
     border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
