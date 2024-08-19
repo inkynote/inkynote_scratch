@@ -125,7 +125,9 @@ body {
 
 .featured-posts img,
 .more-posts img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 300px;
     border-radius: 10px;
 }
 
