@@ -14,7 +14,8 @@ body {
 .site-header {
     background-color: #000;
     text-align: center;
-    padding: 0px;
+    padding: 10px;
+    margin: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,7 +45,7 @@ body {
 /* Modify the sidebar to be a top navigation bar */
 .sidebar {
     background-color: #111;
-    padding: 0px;
+    padding: 10px;
     position: fixed;
     top: 80px; /* Below the header */
     left: 0;
@@ -161,9 +162,11 @@ footer {
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
+    /* Minimize the header height */
     .site-header {
         padding: 5px 0; /* Minimize padding */
-        height: auto; /* Let the height adjust automatically */
+        height: auto; /* Allow height to adjust based on content */
+        position: relative; /* Ensure it doesn't overlap with content */
     }
 
     .site-logo h1 {
@@ -176,10 +179,11 @@ footer {
         margin: 0;
     }
 
+    /* Adjust the navigation bar */
     .sidebar {
         padding: 0; /* Remove extra padding */
         height: auto; /* Let the height adjust automatically */
-        z-index: 1000; /* Ensure it stays above content */
+        position: relative; /* Ensure it doesn't overlap with content */
     }
 
     .sidebar nav ul {
@@ -194,17 +198,17 @@ footer {
         padding: 5px 0; /* Minimize padding */
     }
 
+    /* Ensure the content is properly positioned below the header and sidebar */
     .content {
-        margin-top: calc(5vh + 40px); /* Calculate based on the reduced header size */
+        margin-top: 100px; /* Reduce margin-top to accommodate the smaller header and nav */
         padding: 10px; /* Add some padding to content */
+        position: relative;
+        z-index: 1; /* Make sure it's not overlapped by other elements */
     }
 
     .featured-posts h2 {
-        margin-top: 10px; /* Ensure space above the title */
-        padding-top: 5px; /* Extra padding just in case */
+        margin-top: 0; /* Reduce margin-top */
+        padding-top: 10px; /* Ensure there's some padding */
     }
-
-    /* If the header and navigation still take up too much space, force overflow */
-    body {
-        overflow-y: scroll; /* Make the bo
+}
 
