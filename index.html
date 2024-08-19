@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InkyNote: Writing Retreat</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
@@ -14,21 +15,55 @@
         </div>
     </header>
 
-    <nav class="top-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="posts/news.html">News & Features</a></li>
-            <li><a href="posts/discover.html">Discover</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts/news.html">News & Features</a></li>
+                <li><a href="posts/discover.html">Discover</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main class="content">
-        <!-- Your content here -->
+        <section class="featured-posts" data-aos="fade-up">
+            <h2>Featured Posts</h2>
+            <div class="posts">
+                <article data-aos="fade-right">
+                    <img src="images/post1.jpg" alt="Post 1">
+                    <h3><a href="posts/post1.html">Post Title 1</a></h3>
+                    <p>Short description of the post.</p>
+                </article>
+                <article data-aos="fade-left">
+                    <img src="images/post2.jpg" alt="Post 2">
+                    <h3><a href="posts/post2.html">Post Title 2</a></h3>
+                    <p>Short description of the post.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="more-posts">
+            <h2>More Posts</h2>
+            <div class="posts-list">
+                <!-- Add more posts with similar article structure -->
+                <article>
+                    <img src="images/post3.jpg" alt="Post 3">
+                    <h3><a href="posts/post3.html">Post Title 3</a></h3>
+                    <p>Short description of the post.</p>
+                </article>
+                <!-- Add more articles as needed -->
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2024 InkyNote. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
