@@ -17,13 +17,10 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .site-logo {
-    text-align: left; /* Align the logo to the left */
+    text-align: center;
 }
 
 .site-logo h1 {
@@ -37,58 +34,39 @@ body {
     color: #ccc;
 }
 
-.menu-button {
-    background-color: #000;
-    color: white;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    text-align: right;
-    padding-right: 20px; /* Add some padding to the right to align with the content */
-}
-
-.sidebar {
+.top-menu {
     background-color: #111;
-    padding: 20px;
+    padding: 10px 0;
     position: fixed;
-    top: 100px;
-    left: -220px; /* Hide the sidebar initially */
-    width: 200px;
-    height: calc(100% - 100px);
-    transition: left 0.3s ease;
-    z-index: 1001;
+    top: 80px; /* Adjust according to the height of your header */
+    width: 100%;
+    z-index: 999;
+    text-align: center;
 }
 
-.sidebar.open {
-    left: 0; /* Show the sidebar when open */
-}
-
-.sidebar nav ul {
+.top-menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.sidebar nav ul li {
-    margin-bottom: 20px;
+.top-menu ul li {
+    margin: 0 15px;
 }
 
-.sidebar nav ul li a {
+.top-menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    display: block;
+    padding: 10px;
 }
 
 .content {
-    margin-left: 0; /* No margin when sidebar is closed */
-    padding: 120px 20px 20px 20px;
+    padding-top: 140px; /* Adjust according to the combined height of header and menu */
     flex: 1;
     overflow-y: auto;
-    transition: margin-left 0.3s ease;
-}
-
-.sidebar.open ~ .content {
-    margin-left: 220px; /* Shift content when the sidebar is open */
 }
 
 footer {
