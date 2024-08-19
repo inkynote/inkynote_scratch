@@ -53,6 +53,7 @@ body {
     z-index: 999;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .sidebar nav ul {
@@ -86,7 +87,7 @@ body {
 .content {
     margin-top: 120px; /* Adjust this margin-top based on the combined height of the header and sidebar */
     padding: 0 20px;
-    margin: 0 auto 20px; 
+    #margin: 0 auto 20px; 
     flex: 1;
     overflow-y: auto;
     box-sizing: border-box;
