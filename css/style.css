@@ -30,23 +30,30 @@ body {
     color: #ccc;
 }
 
+/* Modify the sidebar to be a top navigation bar */
 .sidebar {
     background-color: #111;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
-    top: 100px;
+    top: 80px; /* Below the header */
     left: 0;
-    width: 200px;
-    height: calc(100% - 100px);
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .sidebar nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .sidebar nav ul li a {
@@ -54,11 +61,19 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
+.sidebar nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Adjust the content area */
 .content {
-    margin-left: 220px;
-    padding: 120px 20px 20px 20px;
+    margin-top: 160px; /* Adjust this margin-top based on the combined height of the header and sidebar */
+    padding: 20px;
     flex: 1;
     overflow-y: auto;
 }
@@ -87,6 +102,27 @@ body {
 .more-posts img {
     width: 100%;
     border-radius: 10px;
+}
+
+/* Ensure post titles are white and remain white after clicking */
+.sidebar nav ul li a,
+.featured-posts article a,
+.more-posts .posts-list article a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:visited,
+.featured-posts article a:visited,
+.more-posts .posts-list article a:visited {
+    color: white; /* Ensures the color remains white after the link is visited */
+}
+
+.sidebar nav ul li a:hover,
+.featured-posts article a:hover,
+.more-posts .posts-list article a:hover {
+    color: #ccc; /* Optional: Lighten the color on hover if desired */
+    text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 footer {
