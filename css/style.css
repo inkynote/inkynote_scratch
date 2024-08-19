@@ -160,36 +160,50 @@ footer {
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
-    .sidebar nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 3px; /* Space between grid items */
-    }
-
-    .sidebar nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .sidebar nav ul li a {
-        font-size: 1em; /* Reduce font size */
-        padding: 5px 0; /* Reduce padding to make the menu items more compact */
-        width: 100%;
-    }
-
-    .content {
-        margin-top: 80px; /* Reduce margin to accommodate the reduced height of the sidebar */
-    }
     .site-header {
-        padding: 5px 0; /* Reduce padding in the header */
+        padding: 5px 0; /* Minimize padding */
+        height: auto; /* Let the height adjust automatically */
     }
 
     .site-logo h1 {
-        font-size: 1.5em; /* Reduce the font size of the main logo */
+        font-size: 1.5em; /* Reduce logo font size */
+        margin: 0;
     }
 
     .site-logo h2 {
-        font-size: 1em; /* Reduce the font size of the tagline */
+        font-size: 1em; /* Reduce tagline font size */
+        margin: 0;
     }
-}
+
+    .sidebar {
+        padding: 0; /* Remove extra padding */
+        height: auto; /* Let the height adjust automatically */
+        z-index: 1000; /* Ensure it stays above content */
+    }
+
+    .sidebar nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 3px;
+        padding: 5px; /* Minimize padding */
+    }
+
+    .sidebar nav ul li a {
+        font-size: 0.9em; /* Reduce font size */
+        padding: 5px 0; /* Minimize padding */
+    }
+
+    .content {
+        margin-top: calc(5vh + 40px); /* Calculate based on the reduced header size */
+        padding: 10px; /* Add some padding to content */
+    }
+
+    .featured-posts h2 {
+        margin-top: 10px; /* Ensure space above the title */
+        padding-top: 5px; /* Extra padding just in case */
+    }
+
+    /* If the header and navigation still take up too much space, force overflow */
+    body {
+        overflow-y: scroll; /* Make the bo
 
