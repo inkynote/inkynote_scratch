@@ -17,6 +17,9 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-logo h1 {
@@ -30,14 +33,28 @@ body {
     color: #ccc;
 }
 
+.menu-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 .sidebar {
     background-color: #111;
     padding: 20px;
     position: fixed;
     top: 100px;
-    left: 0;
+    left: -220px; /* Hide the sidebar initially */
     width: 200px;
     height: calc(100% - 100px);
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar when open */
 }
 
 .sidebar nav ul {
@@ -57,36 +74,15 @@ body {
 }
 
 .content {
-    margin-left: 220px;
+    margin-left: 0; /* Adjusted to work with collapsible sidebar */
     padding: 120px 20px 20px 20px;
     flex: 1;
     overflow-y: auto;
+    transition: margin-left 0.3s ease;
 }
 
-.featured-posts,
-.more-posts {
-    margin-bottom: 50px;
-}
-
-.featured-posts .posts,
-.more-posts .posts-list {
-    display: flex;
-    gap: 20px;
-}
-
-.featured-posts article,
-.more-posts .posts-list article {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: calc(50% - 10px); /* Adjust based on number of posts in row */
-}
-
-.featured-posts img,
-.more-posts img {
-    width: 100%;
-    border-radius: 10px;
+.sidebar.open ~ .content {
+    margin-left: 220px; /* Adjust the content when the sidebar is open */
 }
 
 footer {
