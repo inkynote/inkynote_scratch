@@ -22,6 +22,10 @@ body {
     align-items: center;
 }
 
+.site-logo {
+    text-align: left; /* Align the logo to the left */
+}
+
 .site-logo h1 {
     margin: 0;
     font-size: 2.5em;
@@ -39,6 +43,8 @@ body {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
+    text-align: right;
+    padding-right: 20px; /* Add some padding to the right to align with the content */
 }
 
 .sidebar {
@@ -74,7 +80,7 @@ body {
 }
 
 .content {
-    margin-left: 0; /* Adjusted to work with collapsible sidebar */
+    margin-left: 0; /* No margin when sidebar is closed */
     padding: 120px 20px 20px 20px;
     flex: 1;
     overflow-y: auto;
@@ -82,7 +88,7 @@ body {
 }
 
 .sidebar.open ~ .content {
-    margin-left: 220px; /* Adjust the content when the sidebar is open */
+    margin-left: 220px; /* Shift content when the sidebar is open */
 }
 
 footer {
