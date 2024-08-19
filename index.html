@@ -8,39 +8,48 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="site-header">
+        <div class="site-logo">
+            <h1>InkyNote</h1>
+            <h2>Writing Retreat</h2>
+        </div>
+    </header>
+
+    <aside class="sidebar">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="posts/news.html">News & Features</a></li>
                 <li><a href="posts/discover.html">Discover</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </header>
-    
-    <section class="landing">
-        <div class="landing-text" data-aos="fade-down">
-            <h1>InkyNote</h1>
-            <h2>Writing Retreat</h2>
-            <p>Explore the wonders of writing.</p>
-        </div>
-    </section>
+    </aside>
 
-    <section class="featured-posts" data-aos="fade-up">
-        <h2>Featured Posts</h2>
-        <div class="posts">
-            <article data-aos="fade-right">
-                <img src="images/post1.jpg" alt="Post 1">
-                <h3>Post Title 1</h3>
-                <p>Short description of the post.</p>
-            </article>
-            <article data-aos="fade-left">
-                <img src="images/post2.jpg" alt="Post 2">
-                <h3>Post Title 2</h3>
-                <p>Short description of the post.</p>
-            </article>
-        </div>
-    </section>
+    <main class="content">
+        <section class="featured-posts" data-aos="fade-up">
+            <h2>Featured Posts</h2>
+            <div class="posts">
+                <article data-aos="fade-right">
+                    <img src="images/post1.jpg" alt="Post 1">
+                    <h3>Post Title 1</h3>
+                    <p>Short description of the post.</p>
+                </article>
+                <article data-aos="fade-left">
+                    <img src="images/post2.jpg" alt="Post 2">
+                    <h3>Post Title 2</h3>
+                    <p>Short description of the post.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="more-posts">
+            <h2>More Posts</h2>
+            <div class="posts-list">
+                <!-- Add more posts with similar article structure -->
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 InkyNote. All Rights Reserved.</p>
