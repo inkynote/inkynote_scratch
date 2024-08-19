@@ -162,7 +162,7 @@ footer {
 @media screen and (max-width: 600px) {
     .sidebar nav ul {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
         gap: 3px; /* Space between grid items */
     }
 
@@ -172,13 +172,24 @@ footer {
     }
 
     .sidebar nav ul li a {
-        font-size: 0.9em; /* Reduce font size */
+        font-size: 1em; /* Reduce font size */
         padding: 5px 0; /* Reduce padding to make the menu items more compact */
         width: 100%;
     }
 
     .content {
         margin-top: 80px; /* Reduce margin to accommodate the reduced height of the sidebar */
+    }
+    .site-header {
+        padding: 5px 0; /* Reduce padding in the header */
+    }
+
+    .site-logo h1 {
+        font-size: 1.5em; /* Reduce the font size of the main logo */
+    }
+
+    .site-logo h2 {
+        font-size: 1em; /* Reduce the font size of the tagline */
     }
 }
 
