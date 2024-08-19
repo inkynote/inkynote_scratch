@@ -157,7 +157,7 @@ footer {
 
     .sidebar nav ul {
         flex-direction: column;
-        gap: 10px; /* Smaller gap between menu items */
+        gap: 5px; /* Smaller gap between menu items */
     }
 
     .sidebar nav ul li {
@@ -166,7 +166,7 @@ footer {
     }
 
     .sidebar nav ul li a {
-        padding: 10px 0;
+        padding: 0px 0;
         width: 100%;
     }
 
