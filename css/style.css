@@ -166,7 +166,7 @@ footer {
 @media screen and (max-width: 600px) {
     /* Minimize the header height */
     .site-header {
-        padding: 5px 0; /* Minimize padding */
+        padding: 0; /* Minimize padding */
         height: auto; /* Allow height to adjust based on content */
         position: relative; /* Ensure it doesn't overlap with content */
     }
