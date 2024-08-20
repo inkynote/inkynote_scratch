@@ -123,7 +123,16 @@ body {
 
 .featured-posts,
 .more-posts {
-    margin-bottom: 50px;
+    margin-top: 20px; /* Adjust margin to ensure spacing below headers */
+    padding: 20px 0; /* Optional padding within the section */
+}
+
+.featured-posts h2,
+.more-posts h2 {
+    margin-top: 0; /* Reset any top margin */
+    padding-top: 20px; /* Ensure there's padding at the top */
+    text-align: center; /* Center the section title */
+    font-size: 2em; /* Adjust font size for emphasis */
 }
 
 .featured-posts .posts,
