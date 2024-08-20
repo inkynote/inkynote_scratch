@@ -14,7 +14,7 @@ body {
 .site-header {
     background-color: #000;
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,12 +41,13 @@ body {
     color: #ccc;
 }
 
+
 /* Modify the sidebar to be a top navigation bar */
 .sidebar {
     background-color: #111;
     padding: 0;
     position: fixed;
-    top: 80px; /* Below the header */
+    top: 60px; /* Below the header */
     left: 0;
     width: 100%;
     height: auto;
@@ -62,7 +63,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center; /* Centering the menu */
-    gap: 40px; /* Adding more space between menu items */
+    gap: 30px; /* Adding space between menu items */
 }
 
 .sidebar nav ul li {
@@ -74,7 +75,7 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -83,11 +84,14 @@ body {
     background-color: #333;
 }
 
+
 /* Adjust the content area */
+
+/*margin: 0 auto 20px; */
+
 .content {
-    margin-top: 200px; /* Adjust this margin-top based on the combined height of the header and sidebar */
-    padding: 0 20px;
-    margin: 0 auto 20px; 
+    margin-top: 120px; /* Adjust this margin-top based on the combined height of the header and sidebar */
+    padding: 20px;
     flex: 1;
     overflow-y: auto;
     box-sizing: border-box;
@@ -125,14 +129,7 @@ body {
 .more-posts {
     margin-top: 20px; /* Adjust margin to ensure spacing below headers */
     padding: 20px 0; /* Optional padding within the section */
-}
-
-.featured-posts h2,
-.more-posts h2 {
-    margin-top: 0; /* Reset any top margin */
-    padding-top: 10px; /* Ensure there's padding at the top */
-    text-align: center; /* Center the section title */
-    font-size: 2em; /* Adjust font size for emphasis */
+    margin-bottom: 50px;
 }
 
 .featured-posts .posts,
