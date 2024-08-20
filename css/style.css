@@ -14,7 +14,7 @@ body {
 .site-header {
     background-color: #000;
     text-align: center;
-    padding: 0;
+    padding: 20px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -85,7 +85,7 @@ body {
 
 /* Adjust the content area */
 .content {
-    margin-top: 160px; /* Adjust this margin-top based on the combined height of the header and sidebar */
+    margin-top: 200px; /* Adjust this margin-top based on the combined height of the header and sidebar */
     padding: 0 20px;
     margin: 0 auto 20px; 
     flex: 1;
@@ -130,7 +130,7 @@ body {
 .featured-posts h2,
 .more-posts h2 {
     margin-top: 0; /* Reset any top margin */
-    padding-top: 20px; /* Ensure there's padding at the top */
+    padding-top: 10px; /* Ensure there's padding at the top */
     text-align: center; /* Center the section title */
     font-size: 2em; /* Adjust font size for emphasis */
 }
