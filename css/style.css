@@ -251,12 +251,13 @@ footer {
     .content {
         margin-top: 50px;
         padding: 10px;
+        position: relative; /* see if needed */
         z-index: 1;
     }
 
     .featured-posts h2 {
-    margin-top: 10px; /* Add some space above the title */
-    padding-top: 10px; /* Keep the internal padding */
+        margin-top: 10px; /* Add some space above the title */
+        padding-top: 0; /* Keep the internal padding 10px */
     }
     
     footer {
