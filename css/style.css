@@ -158,20 +158,23 @@ body {
 /* Ensure post titles are white and remain white after clicking */
 .sidebar nav ul li a,
 .featured-posts article a,
-.more-posts .posts-list article a {
+.more-posts .posts-list article a,
+.category a {
     color: white;
     text-decoration: none;
 }
 
 .sidebar nav ul li a:visited,
 .featured-posts article a:visited,
-.more-posts .posts-list article a:visited {
+.more-posts .posts-list article a:visited,
+.category a:visited {
     color: white; /* Ensures the color remains white after the link is visited */
 }
 
 .sidebar nav ul li a:hover,
 .featured-posts article a:hover,
-.more-posts .posts-list article a:hover {
+.more-posts .posts-list article a:hover,
+.category a:hover {
     color: #ccc; /* Optional: Lighten the color on hover if desired */
     text-decoration: underline; /* Optional: Add underline on hover */
 }
@@ -185,6 +188,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Make the category link white*/
+.category a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline if desired */
+}
+
+.category a:visited {
+    color: white; /* Ensure the color remains white after the link is visited */
+}
+
+.category a:hover {
+    color: #ccc; /* Optionally, change the color when hovering */
+    text-decoration: underline; /* Optionally, add underline on hover */
+}
+
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
