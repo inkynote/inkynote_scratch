@@ -90,7 +90,7 @@ body {
 /*margin: 0 auto 20px; */
 
 .content {
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 0 auto 20px; /* Center the content horizontally */
     margin-top: 120px; /* Adjust this margin-top based on the combined height of the header and sidebar */
     padding: 0 20px; /* Add padding on the left and right */
     flex: 1;
@@ -101,10 +101,10 @@ body {
 
 .content img {
     max-width: 100%; /* Contain the image within the width of the container */
-    max-height: 350px; /* Set a maximum height for the image */
+    max-height: 500px; /* Set a maximum height for the image */
     height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: 0 auto 20px; /* Center the image with margin below */
+    /* margin: 0 auto 20px; /* Center the image with margin below */
     width: auto; /* Ensures the image scales properly */
 }
 
