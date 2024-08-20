@@ -101,7 +101,7 @@ body {
 
 .content img {
     max-width: 100%; /* Contain the image within the width of the container */
-    max-height: 600px; /* Set a maximum height for the image */
+    max-height: 350px; /* Set a maximum height for the image */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto 20px; /* Center the image with margin below */
